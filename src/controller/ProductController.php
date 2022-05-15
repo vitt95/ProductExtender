@@ -23,4 +23,8 @@ class ProductController extends FrameworkBundleAdminController
     );
   }
 
+  public function formRequest(Request $request){
+    
+  }
+
 }
