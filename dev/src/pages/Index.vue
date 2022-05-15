@@ -25,15 +25,5 @@ export default {
 </script>
 
 <style>
-.disabled {
-  pointer-events: none;
-  cursor: none;
-}
 
-.heading {
-  text-align: center;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 </style>
