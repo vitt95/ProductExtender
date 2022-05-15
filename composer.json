@@ -1,0 +1,13 @@
+{
+  "name": "productextender/productcontroller",
+  "description": "A controller that handle comments",
+  "autoload": {
+    "psr-4": {
+      "ProductExtender\\Controller\\": "src/controller/"
+    }
+  },
+  "config": {
+    "prepend-autoloader": false
+  },
+  "type": "prestashop-module"
+}
