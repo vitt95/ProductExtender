@@ -5,13 +5,11 @@
  */
 return [
   'NUMERIC' => [
-    'BIT',
     'DECIMAL',
     'INTEGER',
     'SMALLINT',
     'BIGINT',
     'FLOAT',
-    'DOUBLE PRECISION',
     'REAL'
   ],
   'DATE' => [

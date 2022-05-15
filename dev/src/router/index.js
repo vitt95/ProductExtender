@@ -4,7 +4,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import { defineAsyncComponent } from 'vue';
 
 const routes = [
-  { path: '/', component: defineAsyncComponent(() => import('../pages/Index.vue'))},
+  { path: '/definition-name', component: defineAsyncComponent(() => import('../pages/Index.vue'))},
   { path: '/field-definition', component: defineAsyncComponent(() => import('../components/FieldDefinition.vue'))}
 ];
 

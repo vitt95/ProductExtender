@@ -40,7 +40,7 @@
     ?>
   </select>
 </div>
-<div id="specific_field_<?=$counter?>" class="col-lg-3 specific_field">
+<div id="specific_field_<?=$counter?>" class="col-lg-2 specific_field">
 
 </div>
 </div>

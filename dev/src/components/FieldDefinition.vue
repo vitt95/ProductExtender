@@ -1,6 +1,6 @@
 <template>
   <div id="form-content" class="form-group">
-    <div style="margin-top: 12px" v-if="forms.html.length == 0">
+    <div style="margin-top: 12px" v-if="forms.html.size == 0">
       <div class="spinner spinner-primary"></div>
     </div>
     <div class="addfield-btn">
@@ -69,6 +69,10 @@ export default {
             let dataid = evt.target.getAttribute('id').split('_')[2];
             let response = (await axios.get(`http://localhost:8079/modules/productextender/utils/length_form.php?dt=${dt}&did=${dataid}`)).data;
 
+            if(!!document.getElementById(`specific_${dataid}`)){
+              document.getElementById(`specific_field_${dataid}`).removeChild(document.getElementById(`specific_${dataid}`));
+            }
+
             document.getElementById(`specific_field_${dataid}`).insertAdjacentHTML('beforeend', response);
           })
         }
@@ -98,8 +102,6 @@ export default {
       await this.attachDeleteEvent();
       await this.attachTypeFieldEvent();
     },
-
-
   },
 };
 </script>
